@@ -1,0 +1,6 @@
+Place your résumé PDF in this /public folder and name it exactly:
+
+    Aniket-Mestry-CV.pdf
+
+The "Download résumé" button in the hero links to /Aniket-Mestry-CV.pdf.
+Once the file is here, delete this .txt placeholder.

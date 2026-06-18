@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* ── Dark theme (default) ───────────────────────────────── */
+  :root {
+    --shell-x: clamp(1.25rem, 5vw, 5rem);
+
+    --c-bg: 11 11 13;
+    --c-grad-top: 22 22 26;
+    --c-elev-1: 15 15 18;
+    --c-elev-2: 22 22 26;
+    --c-elev-3: 29 29 34;
+    --c-elev-4: 38 38 45;
+
+    --c-fg: 236 231 223;
+    --c-fg-muted: 168 163 155;
+    --c-fg-dim: 111 107 100;
+
+    --c-accent: 217 136 90;
+    --c-accent-soft: 224 160 126;
+    --c-accent-deep: 184 106 63;
+    --c-on-accent: 17 13 10;
+
+    --c-line: 255 255 255;
+
+    --grain-opacity: 0.04;
+    --scrollbar-track: 11 11 13;
+    --scrollbar-thumb: 42 42 48;
+    --scrollbar-thumb-hover: 58 58 66;
+
+    color-scheme: dark;
+  }
+
+  /* ── Light theme ────────────────────────────────────────── */
+  .light {
+    --c-bg: 245 243 238;
+    --c-grad-top: 255 255 255;
+    --c-elev-1: 255 255 255;
+    --c-elev-2: 240 237 230;
+    --c-elev-3: 233 229 221;
+    --c-elev-4: 223 218 208;
+
+    --c-fg: 26 23 19;
+    --c-fg-muted: 92 86 78;
+    --c-fg-dim: 138 131 121;
+
+    --c-accent: 178 92 48;
+    --c-accent-soft: 196 116 74;
+    --c-accent-deep: 150 75 38;
+    --c-on-accent: 250 248 244;
+
+    --c-line: 24 20 16;
+
+    --grain-opacity: 0.025;
+    --scrollbar-track: 245 243 238;
+    --scrollbar-thumb: 210 204 194;
+    --scrollbar-thumb-hover: 190 183 171;
+
+    color-scheme: light;
+  }
+
+  * {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+  }
+
+  body {
+    @apply bg-ink text-bone font-sans antialiased;
+    background-image: radial-gradient(
+      120% 90% at 50% -10%,
+      rgb(var(--c-grad-top)) 0%,
+      rgb(var(--c-bg)) 55%
+    );
+    overflow-x: hidden;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+
+  ::selection {
+    background: rgb(var(--c-accent));
+    color: rgb(var(--c-on-accent));
+  }
+
+  /* Slim, restrained scrollbar */
+  ::-webkit-scrollbar {
+    width: 9px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgb(var(--scrollbar-track));
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(var(--scrollbar-thumb));
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(var(--scrollbar-thumb-hover));
+  }
+}
+
+@layer components {
+  .shell {
+    @apply mx-auto w-full max-w-shell px-[var(--shell-x)];
+  }
+
+  .label {
+    @apply font-mono text-[0.7rem] uppercase tracking-label text-bone-dim;
+  }
+
+  .hairline {
+    @apply border-t border-line/10;
+  }
+
+  /* Editorial display heading */
+  .display {
+    @apply font-serif font-light leading-[0.95] tracking-[-0.01em];
+  }
+
+  .link-underline {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .link-underline:hover {
+    background-size: 100% 1px;
+  }
+}
+
+/* Film-grain overlay — kills the flat "template" look */
+.grain::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  opacity: var(--grain-opacity);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-marquee {
+    animation: none !important;
+  }
+}
