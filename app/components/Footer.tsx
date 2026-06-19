@@ -5,7 +5,6 @@ const socials = [
   { label: "GitHub", href: profile.github },
   { label: "LinkedIn", href: profile.linkedin },
   { label: "Email", href: `mailto:${profile.email}` },
-  { label: "Résumé", href: profile.resumeUrl },
 ];
 
 export default function Footer() {

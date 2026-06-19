@@ -97,58 +97,51 @@ export default function Hero() {
           initial={reduce ? false : { opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease }}
-          className="mb-4 text-xl text-bone-muted sm:text-2xl"
+          className="mb-5 text-xl text-bone-muted sm:text-2xl"
         >
-          {profile.greeting}
+          Hi, I&apos;m{" "}
+          <span className="font-medium text-bone">{profile.name}</span>.
         </motion.p>
 
         <h1 className="font-sans font-medium leading-[0.92] tracking-[-0.03em] text-bone">
           <span className="block text-[clamp(2.6rem,8.5vw,7rem)]">
-            <Word delay={0.05}>I build for</Word>
-          </span>
-          <span className="block text-[clamp(2.6rem,8.5vw,7rem)]">
             <span className="relative inline-block">
-              <Word delay={0.15}>web,</Word>
+              <Word delay={0.05}>Reliable</Word>
               <Squiggle />
-            </span>{" "}
-            <Word delay={0.23}>mobile</Word>
+            </span>
           </span>
           <span className="block text-[clamp(2.6rem,8.5vw,7rem)]">
-            <Word delay={0.31}>&amp; desktop.</Word>
+            <Word delay={0.15}>software,</Word>
+          </span>
+          <span className="block text-[clamp(2.6rem,8.5vw,7rem)] text-clay">
+            <Word delay={0.25}>end to end.</Word>
           </span>
         </h1>
 
         <motion.div
           initial={reduce ? false : { opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5, ease }}
+          transition={{ duration: 0.8, delay: 0.55, ease }}
           className="relative mt-12 grid gap-10 md:grid-cols-[1.5fr_1fr] md:items-end"
         >
           <p className="max-w-xl text-lg leading-relaxed text-bone-muted">
             {profile.tagline}
-            {/* handwritten margin note */}
-            <span className="relative ml-2 inline-block font-hand text-2xl leading-none text-clay">
-              <span className="absolute -left-5 -top-1 select-none text-clay/70">
-                ↳
-              </span>
-              {profile.heroNote}
-            </span>
           </p>
 
-          <div className="flex flex-col gap-4 md:items-end">
+          <div className="flex flex-col gap-4 sm:flex-row md:flex-col md:items-end">
             <a
               href="#projects"
-              className="group inline-flex items-center gap-3 self-start rounded-full bg-bone px-6 py-3 text-sm font-medium text-ink transition-transform hover:-translate-y-0.5 md:self-end"
+              className="group inline-flex items-center justify-center gap-3 rounded-full bg-bone px-6 py-3 text-sm font-medium text-ink transition-transform hover:-translate-y-0.5"
             >
-              See what I&apos;ve built
+              View my work
               <ArrowDownRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:translate-y-0.5" />
             </a>
             <a
-              href={profile.resumeUrl}
-              className="link-underline inline-flex items-center gap-2 self-start font-mono text-xs uppercase tracking-[0.14em] text-bone-muted hover:text-bone md:self-end"
+              href="#contact"
+              className="group inline-flex items-center justify-center gap-2 rounded-full border border-line/20 px-6 py-3 text-sm font-medium text-bone transition-colors hover:border-clay hover:text-clay"
             >
-              Grab my résumé
-              <ArrowUpRight className="h-3.5 w-3.5" />
+              Get in touch
+              <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
           </div>
         </motion.div>

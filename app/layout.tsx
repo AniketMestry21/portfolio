@@ -1,18 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import { Caveat, Inter, JetBrains_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import { profile } from "./lib/data";
 import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
-  display: "swap",
-});
-
-// Handwriting — used ONLY for sparse human margin notes & the signature.
-const caveat = Caveat({
-  subsets: ["latin"],
-  variable: "--font-hand",
   display: "swap",
 });
 
@@ -77,7 +70,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${inter.variable} ${mono.variable} ${caveat.variable}`}
+      className={`${inter.variable} ${mono.variable}`}
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeInit }} />

@@ -17,21 +17,18 @@ export default function Contact() {
       <div className="shell">
         <Reveal>
           <span className="label text-clay">05 / Contact</span>
-          <p className="mt-8 font-hand text-3xl text-bone-muted">
-            Still here? Let&apos;s fix that.
-          </p>
-          <h2 className="mt-3 text-[clamp(2.5rem,8vw,6rem)] font-medium leading-[0.95] tracking-[-0.03em] text-bone">
-            Got something
+          <h2 className="mt-8 text-[clamp(2.5rem,8vw,6rem)] font-medium leading-[0.95] tracking-[-0.03em] text-bone">
+            Let&apos;s work
             <br />
-            worth <span className="text-clay">building?</span>
+            <span className="text-clay">together.</span>
           </h2>
         </Reveal>
 
         <Reveal delay={0.1}>
           <p className="mt-8 max-w-lg text-lg leading-relaxed text-bone-muted">
-            I&apos;m open to full-time roles and the occasional freelance build.
-            If you&apos;ve got a product to ship — or just want to trade notes on
-            Flutter and clean architecture — drop me a line. I reply to everyone.
+            I&apos;m open to full-time roles and freelance projects. Whether you
+            have a product to build or a position to fill, I&apos;d be glad to
+            hear from you and will respond promptly.
           </p>
         </Reveal>
 

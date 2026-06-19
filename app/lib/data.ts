@@ -16,26 +16,24 @@ export const profile = {
   resumeUrl: "/Aniket-Mestry-CV.pdf",
   available: true,
   // Hero
-  greeting: "Hey, I'm Aniket.",
+  greeting: "Hi, I'm Aniket Mestry.",
   tagline:
-    "I build scalable web, mobile, and desktop products — from Flutter clients with Clean Architecture to Node.js APIs and Next.js front-ends.",
-  heroNote: "yep — I do the backend too.",
-  // About — written like a person, not a spec sheet
+    "Full-Stack & Flutter Developer at Vengurla Tech, turning ideas into well-architected products across web, mobile, and desktop — from Flutter clients on Clean Architecture to Node.js APIs and Next.js front-ends.",
+  // About
   letter: [
-    "I'm a developer from the coast of Maharashtra who likes building the whole thing — the Flutter screen you tap, the API it talks to, and the database underneath.",
-    "A year in at Vengurla Tech, I've shipped cross-platform apps end to end. I'm a little obsessive about clean architecture, predictable state, and auth that actually holds up. If an interface feels deliberate, I've probably rewritten it three times.",
-    "Outside the editor I'm usually deep in a DSA problem or taking apart someone else's codebase to see how it ticks.",
+    "I'm a Full-Stack and Flutter developer focused on building complete products — the mobile interface, the API behind it, and the data layer underneath.",
+    "Over the past year at Vengurla Tech, I've delivered cross-platform applications end to end, with a strong emphasis on clean architecture, predictable state management, and secure authentication.",
+    "I value maintainable, well-structured code and continually strengthen my fundamentals through data structures and algorithms.",
   ],
 };
 
-// Notebook-style facts, not stat cards
 export const facts = [
-  ["Now", "Full-Stack Dev @ Vengurla Tech"],
-  ["Since", "Building for production ~1 year"],
-  ["Home base", "Vengurla, Maharashtra 🌊"],
-  ["Degree", "B.Tech CSE, 2025 — DBATU"],
-  ["Lives in", "data → domain → presentation"],
-  ["Currently into", "Riverpod, refresh-token flows, DSA"],
+  ["Role", "Full-Stack Developer, Vengurla Tech"],
+  ["Experience", "1+ year building for production"],
+  ["Location", "Vengurla, Maharashtra, India"],
+  ["Education", "B.Tech in Computer Science, 2025"],
+  ["Focus", "Clean Architecture & scalable systems"],
+  ["Currently exploring", "Riverpod, secure auth, DSA"],
 ];
 
 export type SkillGroup = {
@@ -168,7 +166,6 @@ export const projects: Project[] = [
     category: "Travel Agency Management",
     year: "2025",
     featured: true,
-    note: "the one I'm proudest of",
     summary:
       "A full-stack travel-agency management system that streamlines customer, driver, vehicle, and trip operations across mobile and backend.",
     highlights: [

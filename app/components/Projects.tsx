@@ -9,11 +9,7 @@ import SectionHeading from "./SectionHeading";
 export default function Projects() {
   return (
     <section id="projects" className="shell scroll-mt-24 py-24 sm:py-32">
-      <SectionHeading
-        index="04"
-        kicker="A few things I've shipped"
-        title="Selected work"
-      />
+      <SectionHeading index="04" kicker="Portfolio" title="Selected work" />
 
       <div className="mt-12 space-y-6">
         {projects.map((p, i) => (
@@ -43,15 +39,10 @@ export default function Projects() {
                     </span>
                   </div>
 
-                  <div className="mt-4 flex items-start gap-4">
+                  <div className="mt-4">
                     <h3 className="text-4xl font-medium tracking-[-0.02em] text-bone sm:text-6xl">
                       {p.name}
                     </h3>
-                    {p.note && (
-                      <span className="mt-2 -rotate-6 font-hand text-xl leading-tight text-clay">
-                        {p.note}
-                      </span>
-                    )}
                   </div>
 
                   <p className="mt-6 max-w-md leading-relaxed text-bone-muted">
