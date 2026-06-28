@@ -1,41 +1,12 @@
-import { useEffect, useState } from "react";
 import { profile } from "../data";
 import { ArrowDownRight, ArrowUpRight } from "./Icons";
 
 export default function Hero() {
-  const [time, setTime] = useState("");
-
-  useEffect(() => {
-    const tick = () =>
-      setTime(
-        new Intl.DateTimeFormat("en-GB", {
-          hour: "2-digit",
-          minute: "2-digit",
-          timeZone: "Asia/Kolkata",
-        }).format(new Date())
-      );
-    tick();
-    const id = setInterval(tick, 30000);
-    return () => clearInterval(id);
-  }, []);
-
   return (
     <section id="top" className="hero">
       <div className="hero__glow" aria-hidden="true"></div>
 
       <div className="shell hero__inner">
-        <div className="hero__eyebrow">
-          {profile.available && (
-            <span className="status">
-              <span className="status__dot"></span>
-              <span className="mono">Open to work</span>
-            </span>
-          )}
-          <span className="mono dim">
-            Vengurla, IN {time && <>· {time} local</>}
-          </span>
-        </div>
-
         <p className="hero__greeting">
           Hi, I&apos;m <span className="hero__name">{profile.name}</span>.
         </p>
