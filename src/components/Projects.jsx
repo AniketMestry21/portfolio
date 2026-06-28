@@ -19,7 +19,6 @@ export default function Projects() {
                 <div className="project__left">
                   <div className="project__tag">
                     <span className="mono accent">{p.category}</span>
-                    <span className="mono dim">· {p.year}</span>
                   </div>
                   <h3 className="project__name">{p.name}</h3>
                   <p className="project__summary">{p.summary}</p>
