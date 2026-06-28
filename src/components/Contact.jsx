@@ -27,9 +27,9 @@ export default function Contact() {
 
       <Reveal delay={100}>
         <p className="contact__text">
-          I&apos;m open to full-time roles and freelance projects. Whether you
-          have a product to build or a position to fill, I&apos;d be glad to hear
-          from you and will respond promptly.
+          I&apos;m open to full-time roles. Whether you have a product to build
+          or a position to fill, I&apos;d be glad to hear from you and will
+          respond promptly.
         </p>
       </Reveal>
 
