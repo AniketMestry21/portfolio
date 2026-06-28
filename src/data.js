@@ -7,7 +7,7 @@ export const profile = {
   name: "Aniket Mestry",
   fullName: "Aniket Atmaram Mestry",
   role: "Full-Stack & Flutter Developer",
-  location: "Vengurla, Maharashtra, India",
+  location: "Sindhudurg, Maharashtra",
   email: "aniketmestry2103@gmail.com",
   phone: "+91 82638 29478",
   github: "https://github.com/AniketMestry21",
@@ -25,7 +25,7 @@ export const profile = {
 export const facts = [
   ["Role", "Full-Stack Developer, Vengurla Tech"],
   ["Experience", "1+ year building for production"],
-  ["Location", "Vengurla, Maharashtra, India"],
+  ["Location", "Sindhudurg, Maharashtra"],
   ["Education", "B.Tech in Computer Science, 2025"],
   ["Focus", "Clean Architecture & scalable systems"],
   ["Exploring", "Riverpod, secure auth, DSA"],
