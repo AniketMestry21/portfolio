@@ -1,50 +1,40 @@
 # Aniket Mestry — Portfolio
 
-A fast, editorial portfolio for a Full-Stack & Flutter developer. Built with
-**Next.js 14 (App Router)**, **TypeScript**, **Tailwind CSS**, and
-**Framer Motion**. Designed to feel hand-crafted: serif display type, monospace
-labels, hairline ledgers, film-grain, and restrained motion.
+A personal portfolio built with **React + Vite** and plain **CSS** — no
+TypeScript, no heavy frameworks. Simple to read, simple to edit.
 
 ## Tech
 
-- Next.js 14 · React 18 · TypeScript
-- Tailwind CSS 3 (custom theme: `ink` / `bone` / `clay`)
-- Framer Motion (reveal + micro-interactions, respects reduced-motion)
-- `next/font` (Fraunces · Inter · JetBrains Mono — zero layout shift)
-- Built-in SEO: metadata, Open Graph, JSON-LD, sitemap, robots
+- React 18 (plain JavaScript / JSX)
+- Vite (dev server + build)
+- Plain CSS with a light/dark theme toggle
 
-## Run locally
+## Run it locally
 
 ```bash
-npm install
-npm run dev        # http://localhost:3000
+npm install      # one time — installs React + Vite
+npm run dev      # start dev server → http://localhost:5173
 ```
+
+Build for production:
 
 ```bash
-npm run build      # production build
-npm start          # serve the build
+npm run build    # output goes to the dist/ folder
+npm run preview  # preview the production build
 ```
 
-## Make it yours
+## Edit your content
 
-- **All content** lives in [`app/lib/data.ts`](app/lib/data.ts) — name, links,
-  skills, experience, projects. Edit there; every section updates.
-- **Résumé**: drop your PDF in `public/` as `Aniket-Mestry-CV.pdf`.
-- **Social links**: set real `github` / `linkedin` URLs in `data.ts`.
-- **Domain**: replace `aniket-mestry.vercel.app` in `app/layout.tsx`,
-  `app/page.tsx`, `app/robots.ts`, and `app/sitemap.ts`.
-- **Accent color**: change `clay` in [`tailwind.config.ts`](tailwind.config.ts).
+Almost everything (name, links, skills, experience, projects, contact)
+lives in one file: **`src/data.js`**. Change it there and every section
+updates.
 
-## Deploy to Vercel
+- **Résumé:** put your PDF in the `public/` folder, e.g. `public/Aniket-Mestry-CV.pdf`.
+- **Colors:** change the variables at the top of `src/styles.css`.
 
-1. Push this folder to a GitHub repo.
-2. On [vercel.com](https://vercel.com/new) → **Import** the repo.
-3. Framework preset auto-detects **Next.js**. No env vars needed. **Deploy.**
+## Deploy on Vercel
 
-Or from the CLI:
-
-```bash
-npm i -g vercel
-vercel            # follow prompts
-vercel --prod
-```
+1. Push this folder to GitHub.
+2. Go to https://vercel.com/new and import the repo.
+3. Vercel auto-detects **Vite** — just click **Deploy**.
+   (Build command `npm run build`, output directory `dist`.)

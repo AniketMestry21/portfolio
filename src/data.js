@@ -1,6 +1,6 @@
 // ─────────────────────────────────────────────────────────────
-//  Single source of truth for portfolio content.
-//  Edit here; every section reads from this file.
+//  All website content lives here. Edit this file to update the
+//  site — every section reads from it.
 // ─────────────────────────────────────────────────────────────
 
 export const profile = {
@@ -8,18 +8,13 @@ export const profile = {
   fullName: "Aniket Atmaram Mestry",
   role: "Full-Stack & Flutter Developer",
   location: "Vengurla, Maharashtra, India",
-  timezone: "Asia/Kolkata",
   email: "aniketmestry2103@gmail.com",
   phone: "+91 82638 29478",
   github: "https://github.com/AniketMestry21",
   linkedin: "https://www.linkedin.com/in/aniket-mestry/",
-  resumeUrl: "/Aniket-Mestry-CV.pdf",
   available: true,
-  // Hero
-  greeting: "Hi, I'm Aniket Mestry.",
   tagline:
     "Full-Stack & Flutter Developer at Vengurla Tech, turning ideas into well-architected products across web, mobile, and desktop — from Flutter clients on Clean Architecture to Node.js APIs and Next.js front-ends.",
-  // About
   letter: [
     "I'm a Full-Stack and Flutter developer focused on building complete products — the mobile interface, the API behind it, and the data layer underneath.",
     "Over the past year at Vengurla Tech, I've delivered cross-platform applications end to end, with a strong emphasis on clean architecture, predictable state management, and secure authentication.",
@@ -33,30 +28,14 @@ export const facts = [
   ["Location", "Vengurla, Maharashtra, India"],
   ["Education", "B.Tech in Computer Science, 2025"],
   ["Focus", "Clean Architecture & scalable systems"],
-  ["Currently exploring", "Riverpod, secure auth, DSA"],
+  ["Exploring", "Riverpod, secure auth, DSA"],
 ];
 
-export type SkillGroup = {
-  title: string;
-  items: string[];
-};
-
-export const skillGroups: SkillGroup[] = [
-  {
-    title: "Languages",
-    items: ["Dart", "JavaScript", "Java", "SQL", "C"],
-  },
+export const skillGroups = [
+  { title: "Languages", items: ["Dart", "JavaScript", "Java", "SQL", "C"] },
   {
     title: "Frontend",
-    items: [
-      "React.js",
-      "Next.js",
-      "HTML5",
-      "CSS3",
-      "Bootstrap",
-      "jQuery",
-      "Responsive / Mobile-First",
-    ],
+    items: ["React.js", "Next.js", "HTML5", "CSS3", "Bootstrap", "jQuery"],
   },
   {
     title: "Mobile",
@@ -64,7 +43,7 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     title: "Backend",
-    items: ["Node.js", "Next.js", "REST APIs", "PHP", "Express.js"],
+    items: ["Node.js", "Express.js", "REST APIs", "PHP"],
   },
   {
     title: "Data & Services",
@@ -72,11 +51,10 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     title: "Tools & Practice",
-    items: ["Git", "Postman", "OOP", "Design Principles", "Agile / SDLC"],
+    items: ["Git", "Postman", "OOP", "Agile / SDLC"],
   },
 ];
 
-// Compact ticker list for the marquee
 export const marqueeSkills = [
   "Flutter",
   "Riverpod",
@@ -89,24 +67,10 @@ export const marqueeSkills = [
   "JWT Auth",
   "Firebase",
   "MySQL",
-  "MS SQL Server",
   "Dart",
-  "TypeScript",
-  "MVVM",
-  "Git",
 ];
 
-export type Experience = {
-  role: string;
-  company: string;
-  location: string;
-  period: string;
-  current?: boolean;
-  points: string[];
-  stack: string[];
-};
-
-export const experience: Experience[] = [
+export const experience = [
   {
     role: "Full-Stack Developer",
     company: "Vengurla Tech",
@@ -114,11 +78,11 @@ export const experience: Experience[] = [
     period: "Jun 2025 — Present",
     current: true,
     points: [
-      "Developed 3+ cross-platform applications with Flutter, MVVM, and Clean Architecture (data / domain / presentation).",
+      "Developed 3+ cross-platform applications with Flutter, MVVM, and Clean Architecture.",
       "Built and enhanced web applications using React, Next.js, Node.js, and Bootstrap.",
       "Integrated REST APIs, Firebase push notifications, and JWT authentication with refresh tokens.",
       "Implemented analytics dashboards and data-visualization features for sharper user insight.",
-      "Collaborated in an Agile, cross-functional team using Git, Postman, and MySQL to ship maintainable software.",
+      "Collaborated in an Agile team using Git, Postman, and MySQL to ship maintainable software.",
     ],
     stack: ["Flutter", "React", "Next.js", "Node.js", "Firebase", "MySQL"],
   },
@@ -147,19 +111,7 @@ export const experience: Experience[] = [
   },
 ];
 
-export type Project = {
-  index: string;
-  name: string;
-  category: string;
-  year: string;
-  summary: string;
-  highlights: string[];
-  stack: string[];
-  featured?: boolean;
-  note?: string;
-};
-
-export const projects: Project[] = [
+export const projects = [
   {
     index: "01",
     name: "Vego",
@@ -205,7 +157,6 @@ export const education = {
   institution: "Dr. Babasaheb Ambedkar Technological University, Lonere",
   degree: "B.Tech in Computer Science",
   period: "Oct 2021 — May 2025",
-  
 };
 
 export const navLinks = [

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Aniket Mestry — Full-Stack &amp; Flutter Developer</title>
+    <meta
+      name="description"
+      content="Aniket Mestry — Full-Stack & Flutter Developer building scalable web, mobile, and desktop products with React, Next.js, Node.js, and Flutter."
+    />
+    <meta name="author" content="Aniket Atmaram Mestry" />
+
+    <!-- Social sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Aniket Mestry — Full-Stack & Flutter Developer" />
+    <meta
+      property="og:description"
+      content="Full-Stack & Flutter Developer building scalable web, mobile, and desktop products."
+    />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Apply saved theme before paint to avoid a flash -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (!t) {
+            t = window.matchMedia("(prefers-color-scheme: light)").matches
+              ? "light"
+              : "dark";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
