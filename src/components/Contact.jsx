@@ -9,7 +9,6 @@ const channels = [
     value: profile.phone,
     href: `tel:${profile.phone.replace(/\s/g, "")}`,
   },
-  { label: "GitHub", value: "View repositories", href: profile.github },
   { label: "LinkedIn", value: "Connect with me", href: profile.linkedin },
 ];
 
