@@ -165,6 +165,20 @@ export const projects = [
     ],
     stack: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
   },
+  {
+    index: "04",
+    name: "E-commerce Website",
+    category: "Web Application · Online Store",
+    year: "2023",
+    summary:
+      "A full-stack online furniture store with product listings, category filters, a shopping cart, and secure user authentication.",
+    highlights: [
+      "Developed end to end with PHP and MySQL, including secure user authentication.",
+      "Implemented product listings, category filters, and a shopping-cart workflow.",
+      "Designed a responsive, intuitive UI for seamless browsing and checkout across devices.",
+    ],
+    stack: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+  },
 ];
 
 export const education = {
