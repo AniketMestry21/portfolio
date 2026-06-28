@@ -151,6 +151,20 @@ export const projects = [
     ],
     stack: ["PHP", "MySQL", "Web3.js", "Ethereum", "Ganache", "MetaMask"],
   },
+  {
+    index: "03",
+    name: "University Exam Paper Setter",
+    category: "Web Application",
+    year: "2023",
+    summary:
+      "A web application for creating and managing university examination papers, with secure authentication and dynamic question-paper generation.",
+    highlights: [
+      "Built end to end with PHP and MySQL, including user authentication and access control.",
+      "Generated question papers dynamically from a managed question bank.",
+      "Designed a clean, responsive interface with HTML, CSS, and JavaScript.",
+    ],
+    stack: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+  },
 ];
 
 export const education = {
