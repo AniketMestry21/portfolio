@@ -27,8 +27,6 @@ export const facts = [
   ["Experience", "1+ year building for production"],
   ["Location", "Sindhudurg, Maharashtra"],
   ["Education", "B.Tech in Computer Science, 2025"],
-  ["Focus", "Clean Architecture & scalable systems"],
-  ["Exploring", "Riverpod, secure auth, DSA"],
 ];
 
 export const skillGroups = [
