@@ -53,7 +53,7 @@ export default function Footer() {
 
       <div className="shell footer__bottom">
         <p className="mono dim">
-          © {year} {profile.fullName}. All rights reserved.
+          © {year} {profile.fullName}
         </p>
         <p className="mono dim">{profile.location}</p>
         <a href="#top" className="mono footer__top-link">
